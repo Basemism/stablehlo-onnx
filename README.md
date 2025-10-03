@@ -1,0 +1,1 @@
+This is a PoC that translates a small subset of StableHLO IR (text form) into ONNX, then compiles to an ONNX model.
