@@ -27,7 +27,6 @@ def parse_module(text: str) -> Module:
     return Module(name=name, functions=functions)
 
 def _parse_function(lines: List[str], start: int):
-    """Parse a single func.func and stop exactly at its matching '}'."""
     sig = _clean(lines[start])
 
     at = sig.find("@")
@@ -125,7 +124,6 @@ def _parse_function(lines: List[str], start: int):
     return Function(name=fname, args=args, rets=rets, ops=ops), j
 
 def _parse_operands_attrs_types(rest: str):
-    """Extract operand %names first; capture a couple attrs (e.g., contracting_dims); keep trailing type part."""
     type_str = None
     before = rest
     if " : " in rest:
