@@ -17,4 +17,4 @@ print(stablehlo_txt)
 with open("PoC_jax.mlir", "w") as f:
     f.write(str(stablehlo_txt))
 
-print("Saved PoC_jax.mlir \n\n")
+print("Saved PoC_jax.mlir")

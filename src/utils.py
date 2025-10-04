@@ -1,15 +1,15 @@
 from .ir import TensorType
 
-def dtype_to_onnx(dtype):
-    return {
-        'f32': 'FLOAT',
-        'f16': 'FLOAT16',
-        'bf16': 'BFLOAT16',
-        'i64': 'INT64',
-        'i32': 'INT32',
-        'i8': 'INT8',
-        'u8': 'UINT8',
-    }.get(dtype, 'FLOAT')
+# def dtype_to_onnx(dtype):
+#     return {
+#         'f32': 'FLOAT',
+#         'f16': 'FLOAT16',
+#         'bf16': 'BFLOAT16',
+#         'i64': 'INT64',
+#         'i32': 'INT32',
+#         'i8': 'INT8',
+#         'u8': 'UINT8',
+#     }.get(dtype, 'FLOAT')
 
 def strip_loc(s: str) -> str:
     out = []

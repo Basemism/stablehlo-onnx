@@ -1,1 +1,4 @@
-This is a PoC that translates a small subset of StableHLO IR (text form) into ONNX, then compiles to an ONNX model.
+# StableHLO to ONNX Proof of Concept
+
+This is a PoC that demonstrates a prototype translator that converts machine learning models expressed in the StableHLO dialect (MLIR) into the ONNX format.
+
