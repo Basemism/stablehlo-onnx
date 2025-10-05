@@ -1,0 +1,5 @@
+jax==0.7.2
+onnx==1.19.0
+onnxscript==0.5.3
+torch==2.10.0.dev20251003+cpu
+torchax==0.0.7
